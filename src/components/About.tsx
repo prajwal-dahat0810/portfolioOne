@@ -28,9 +28,9 @@ export const About = () => {
           <div className="flex row  border  h-full w-[40%] items-center text-white justify-center   ">
             <img src={myimg} alt="" className="h-full w-full" />
           </div>
-          <div className="flex row  border h-full w-[50%]  items-center text-md px-3 py-2   leading-loose  text-slate-600 font-medium justify-center   ">
-            i am the best answer and do things that are impossible and very very
-            difficult for u
+          <div className="flex row  border h-full w-[50%]  items-center text-md px-16 py-2   leading-loose  text-slate-600 font-medium justify-center   ">
+            Hey, I'm Prajwal full Stack Developer. I've been coding sense 2022.
+            I love to develop website that have an impact on peoples life.
           </div>
         </div>
       </div>
