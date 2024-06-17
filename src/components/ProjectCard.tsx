@@ -69,7 +69,7 @@ export const ProjectCard = () => {
                 }}
               >
                 <div className="flex  flex-col">
-                  <Link to={`${"projectUrl"}`}>
+                  <Link to={`${projectUrl}`}>
                     <div className="w-full min-h-80 ">
                       <img
                         src={imageUrl}
