@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes grow-shrink {
+  75%,
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.animate-grow-shrink {
+  animation: grow-shrink 3s infinite;
+}
