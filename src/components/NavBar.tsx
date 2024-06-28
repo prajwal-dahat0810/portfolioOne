@@ -1,6 +1,6 @@
 export default function NavBar() {
   const scrollToHome = ({ id }: any) => {
-    const element = document.getElementById(`${id}`);
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -13,35 +13,40 @@ export default function NavBar() {
       <div className="flex flex-row  sr-only md:not-sr-only text-lg cursor-pointer gap-16 text-slate-300 justify-between   ">
         <div
           className="hover:text-white "
-          onClick={(e) => {
-            scrollToHome(home);
+          onClick={() => {
+            scrollToHome("home");
           }}
         >
           Home
         </div>
         <div
           className="hover:text-white"
-          onClick={(e) => {
-            scrollToHome(work);
+          onClick={() => {
+            scrollToHome("work");
           }}
         >
           Work
         </div>
         <div
           className="hover:text-white"
-          onClick={(e) => {
-            scrollToHome(about);
+          onClick={() => {
+            scrollToHome("about");
           }}
         >
           About
         </div>
-        <div className="hover:text-white" onClick={(e) => {
-            scrollToHome(contact);
-          }}>Contact</div>
+        <div
+          className="hover:text-white"
+          onClick={() => {
+            scrollToHome("contact");
+          }}
+        >
+          Contact
+        </div>
       </div>
       <div className="text-white">
         <button
-          onClick={(e) => {
+          onClick={() => {
             window.location.href =
               "https://drive.google.com/file/d/1WRpTUyRwitCvdNXWOoylia4NFN0bDQC0/view";
           }}
