@@ -1,5 +1,5 @@
 export default function NavBar() {
-  const scrollToHome = ({ id }: any) => {
+  const scrollToHome = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -47,8 +47,7 @@ export default function NavBar() {
       <div className="text-white">
         <button
           onClick={() => {
-            window.location.href =
-              "https://drive.google.com/file/d/1WRpTUyRwitCvdNXWOoylia4NFN0bDQC0/view";
+            window.location.href = "";
           }}
           className=" max-sm: max-md: border-indigo-800 bg-transparent px-6 py-2 rounded-lg  border-2 hover:border-indigo-300 hover:bg-semal"
         >
