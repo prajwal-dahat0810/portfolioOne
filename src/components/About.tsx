@@ -2,7 +2,7 @@ import { MainHeading } from "./MainHeading";
 import myimg from "../images/myimg1.jpg";
 export const About = () => {
   return (
-    <div className="h-screen w-full">
+    <div id="about" className="h-full   w-full">
       <div className="relative h-full  flex items-center   p-10 flex-col ">
         <div className="flex row  px-3 py-2 items-center text-white justify-center rounded-full bg-teal-400 ">
           <div>
@@ -24,11 +24,11 @@ export const About = () => {
             "max-sm:text-xl  font-mono font-semibold text-6xl text-slate-900 "
           }
         />
-        <div className="relative w-full border gap-9 h-5/6  flex items-center   pt-10 pb-2 px-3  ">
-          <div className="flex row  border  h-full w-[40%] items-center text-white justify-center   ">
-            <img src={myimg} alt="" className="h-full w-full" />
+        <div className=" w-full   gap-9 h-5/6   flex items-center   pt-10 pb-2 px-3  max-sm:flex-col   ">
+          <div className="flex row    h-full w-[40%] items-center  text-white justify-center   max-sm:w-[100%] min-h-56 ">
+            <img src={myimg} alt="" className="h-full rounded-xl w-full" />
           </div>
-          <div className="flex row  border h-full w-[50%]  items-center text-md px-16 py-2   leading-loose  text-slate-600 font-medium justify-center   ">
+          <div className="flex row   h-full w-[50%]  items-center text-md px-16 py-2   leading-loose  text-slate-600 font-medium justify-center  max-sm:w-full px-5 text-base   ">
             Hey, I'm Prajwal full Stack Developer. I've been coding sense 2022.
             I love to develop website that have an impact on peoples life.
           </div>

@@ -76,7 +76,10 @@ export default function Landing() {
   return (
     <div className="w-full h-svh  ">
       <NavBar></NavBar>
-      <div className="  bg-white md:pt-28 h-screen flex flex-col items-center justify-center text-center overflow-hidden pb-10 pt-52">
+      <div
+        id="home"
+        className="  bg-white md:pt-28 h-screen flex flex-col items-center justify-center text-center overflow-hidden pb-10 pt-52"
+      >
         <div className="relative flex  justify-center items-center border bg-green-300 border-black">
           <div className="absolute border dark:border-[#302e2e] border-[#8aa9eb] rounded-full lg:h-[300px] lg:w-[300px]  md:w-44 md:h-44 sm:w-44 sm:h-44 max-sm:h-44 max-sm:w-44 "></div>
           <div className="absolute border animate-grow-shrink  duration-100 dark:border-[#302e2e] border-[#8aa9eb] rounded-full h-[200px] w-[200px] sm:h-14w-14 "></div>
@@ -96,15 +99,15 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className=" absolute  w-full  md:pt-28 h-1/5 flex flex-col items-center justify-center text-center  bottom-48">
+      <div className=" absolute  w-full  md:pt-28 h-1/5 flex flex-col items-center justify-center text-center  bottom-48 max-sm:bottom-32">
         <SubHeading
           content={"Full Stack Developer"}
           style={
-            "max-sm:text-sm font-medium z-50  bottom-40  text-3xl text-slate-500 text-sm text-gray-800 dark:text-gray-400 uppercase  md:tracking-[15px] pb-2 font-outfit"
+            " z-50  bottom-40  text-3xl text-slate-500 text-sm text-gray-800 dark:text-gray-400 uppercase  md:tracking-[15px] pb-2 font-outfit max-sm:text-sm font-medium"
           }
         />
       </div>
-      <div className="absolute   w-full  md:pt-28 h-1/5 flex flex-col items-center justify-center text-center  bottom-32">
+      <div className="absolute   w-full  md:pt-28 h-1/5 flex flex-col items-center justify-center text-center  bottom-32 max-sm:bottom-24">
         <MainHeading
           content={"PRAJWAL DAHAT"}
           style={"max-sm:text-lg  font-semibold text-6xl text-gray-400"}
@@ -178,10 +181,12 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <div className="">{<Work />}</div>
+      <div className="" id={"work"}>
+        {<Work />}
+      </div>
       <div className="">{<ProjectCards />}</div>
       <div className="">{<About />}</div>
-      <div className="h-screen w-full">{<Contact />}</div>
+      <div className="">{<Contact />}</div>
       <div className="">{<Footer />}</div>
     </div>
   );
