@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <div className="h-16 w-full fixed z-50 bg-gray-950 flex items-center justify-around">
-      <div className="text-white font-serif font-extrabold border-indigo-800 bg-transparent px-6 py-2 rounded-lg    hover:bg-slate-300 hover:text-black max-sm:sr-only">
+      <div className="text-white font-serif font-extrabold  bg-transparent px-6 py-2 rounded-lg   max-sm:sr-only">
         Prajwal
       </div>
       <div className="text-white font-serif font-extrabold border-indigo-800 bg-transparent px-6 py-2 rounded-lg   sr-only  hover:text-black max-sm:not-sr-only max-sm:px-1  ">

@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { MainHeading } from "./MainHeading";
 import { SubHeading } from "./SubHeading";
 export const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   return (
     <div id="contact" className="w-full h-full  ">
       <div className="relative h-full  flex items-center gap-3   p-10 flex-col ">
@@ -52,6 +56,7 @@ export const Contact = () => {
                 className="bg-gray-50 border h-14 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="John"
                 required
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="w-full  min-h-14 ">
@@ -64,6 +69,7 @@ export const Contact = () => {
                 className="bg-gray-50 border h-14 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="john@gmail.com"
                 required
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
           </div>
@@ -71,9 +77,16 @@ export const Contact = () => {
             <textarea
               className="h-72 py-7 px-3 w-full border   text-slate-600 "
               placeholder="Writing Message ..."
+              onChange={(e) => setSubject(e.target.value)}
             ></textarea>
           </div>
-          <button className="w-full min-h-12 bg-slate-200 max-sm: max-md: border-indigo-800 bg-transparent px-6 py-2 rounded-lg  border-2 hover:border-indigo-300 hover:bg-semal">
+          <button
+            onClick={(e) => {
+              window.location.href = `mailto:dahataprajwal11@gmail.com?name=${name}&email=${email}&subject=${subject}`;
+            }}
+            type="submit"
+            className="w-full min-h-12 bg-slate-200 max-sm: max-md: border-indigo-800 bg-transparent px-6 py-2 rounded-lg  border-2 hover:border-indigo-300 hover:bg-semal"
+          >
             Send
           </button>
         </div>
