@@ -28,7 +28,7 @@ export const ProjectCard = ({
         key={id}
         className={` w-[450px] rounded-md h-[450px] opacity-${
           id === currentIndex ? "1" : "0"
-        } transition-opacity border relative md:left-[20%] 2xl:left-[37.6rem] xl:left-[30rem] lg:left-[26%] duration-[600ms] ease-in-out motion-reduce:transition-none   max-sm:h-[500px] 
+        } transition-opacity border relative md:left-[10rem]  2xl:left-[64rem] xl:left-[30rem] lg:left-[16rem] md:[11rem]  duration-[600ms] ease-in-out motion-reduce:transition-none   max-sm:h-[500px] 
           max-sm:w-[98%]  max-sm:px-5 `}
         data-twe-carousel-fade
         data-twe-carousel-item
