@@ -23,14 +23,28 @@ export const About = () => {
           style={
             "max-sm:text-xl  font-mono font-semibold text-6xl text-slate-900 "
           }
+          hasPopover={true}
+          popoverContent={"About Me"}
         />
         <div className=" w-full   gap-9 h-5/6   flex items-center   pt-10 pb-2 px-3  max-sm:flex-col   ">
           <div className="flex row    h-full w-[40%] items-center  text-white justify-center   max-sm:w-[100%] min-h-56 ">
             <img src={myimg} alt="" className="h-full rounded-xl w-full" />
           </div>
-          <div className="flex row   h-full w-[50%]  items-center text-md px-16 py-2   leading-loose  text-slate-600 font-medium justify-center  max-sm:w-full px-5 text-base   ">
-            Hey, I'm Prajwal full Stack Developer. I've been coding sense 2022.
-            I love to develop website that have an impact on peoples life.
+          <div className="flex flex-col  h-full w-[50%]  items-center text-md  py-2   leading-loose  text-slate-500 font-medium justify-center  max-sm:font-normal max-sm:text-sm  max-sm:w-full px-5 max-sm:px-1   ">
+            <div className="flex  flex-row leading-tight text-md py-2 xl:text-lg max-sm:flex-col sm:text-sm font-sans justify-start items-start   text-slate-500 font-medium  md:text-base max-sm:w-full max-sm:text-sm px-5 text-lg   ">
+              Hi there , My name is{" "}
+              <div className="xl:text-xl text-sky-700  pl-2  md:text-sm sm:text-sm max-sm:text-base">
+                Prajwal Dahat
+              </div>
+            </div>
+            <div className="flex row  items-center text-md  py-2 xl:text-lg md:text-base sm:text-sm  font-sans leading-loose text-lg text-slate-500  font-medium justify-center max-sm:font-normal max-sm:text-sm  max-sm:w-full px-5 max-sm:px-1 ">
+              I am a full Stack Developer. I've been coding sense 2022. I love
+              to develop websites that have an impact on peoples life.
+            </div>
+            <div className="flex row  items-center text-md  py-2 xl:text-lg md:text-base  sm:text-sm font-sans leading-loose text-lg text-slate-500  font-medium justify-center max-sm:font-normal max-sm:text-sm  max-sm:w-full px-5 max-sm:px-1  ">
+              Self driven, passionate programmer with a curious mind who enjoys
+              solving complex and challenging real-world problems in life.
+            </div>
           </div>
         </div>
       </div>

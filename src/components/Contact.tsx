@@ -27,6 +27,8 @@ export const Contact = () => {
             style={
               "max-sm:text-xl  font-mono font-semibold text-6xl text-slate-900 "
             }
+            hasPopover={true}
+            popoverContent={"Found Me , Here"}
           />
         </div>
         <div>
@@ -67,7 +69,7 @@ export const Contact = () => {
           </div>
           <div className="h-72  w-full">
             <textarea
-              className="h-72 py-7 px-3 w-full border   text-slate-600 resize-none "
+              className="h-72 py-7 px-3 w-full border   text-slate-600 "
               placeholder="Writing Message ..."
             ></textarea>
           </div>
