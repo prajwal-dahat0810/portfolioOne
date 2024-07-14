@@ -81,7 +81,7 @@ export const Contact = () => {
             ></textarea>
           </div>
           <button
-            onClick={(e) => {
+            onClick={() => {
               window.location.href = `mailto:dahataprajwal11@gmail.com?name=${name}&email=${email}&subject=${subject}`;
             }}
             type="submit"
