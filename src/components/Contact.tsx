@@ -1,9 +1,5 @@
-import { useState } from "react";
 import { SubHeading } from "./SubHeading";
 export const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
   return (
     <div id="contact" className="w-full h-full  ">
       <div className="relative h-full  flex items-center gap-3   p-10 flex-col ">

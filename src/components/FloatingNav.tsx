@@ -1,15 +1,12 @@
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
-  AnimatePresence,
   MotionValue,
   motion,
   useMotionValue,
   useSpring,
   useTransform,
 } from "framer-motion";
-import { Link } from "react-scroll";
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({
@@ -109,7 +106,6 @@ const FloatingDockDesktop = ({
 
 function IconContainer({
   mouseX,
-  title,
   icon,
   href,
 }: {
@@ -154,10 +150,9 @@ function IconContainer({
     damping: 12,
   });
 
-  const [hovered, setHovered] = useState(false);
+  const [, setHovered] = useState(false);
 
   return (
-    // <Link to={href} className="cursor-pointer" smooth duration={500}>
     <motion.div
       ref={ref}
       style={{ width, height }}
@@ -174,6 +169,5 @@ function IconContainer({
         </motion.div>
       </a>
     </motion.div>
-    // </Link>
   );
 }

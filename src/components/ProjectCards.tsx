@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { ProjectCard, ProjectParameter } from "./ProjectCard";
 import paytmLogo from "../images/Projectimg/paytmlogo.png";
 import smallesAI from "../images/Projectimg/smallestAI.png";
 import monorepo from "../images/Projectimg/paytmMonorepo.png";
 import mediumLogo from "../images/Projectimg/mediumlogo.png";
 export const ProjectCards = () => {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
   const Projects: ProjectParameter[] = [
     {
       id: 0,

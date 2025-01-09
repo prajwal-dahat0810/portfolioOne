@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import myimg from "../images/myimg1 (1).jpg";
 export const About = () => {
   function handleClick() {

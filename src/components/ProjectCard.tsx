@@ -15,7 +15,6 @@ export interface ProjectParameter {
 import { Button } from "../components/ui/moving-border";
 export const ProjectCard = ({
   id,
-  currentIndex,
   imageUrl,
   title,
   description,

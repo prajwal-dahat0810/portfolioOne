@@ -1,4 +1,3 @@
-import { Cards } from "./Cards";
 import { InfiniteMovingCards } from "./ui/InfinteCards";
 
 const FirstRow = [

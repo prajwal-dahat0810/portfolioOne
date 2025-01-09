@@ -4,7 +4,6 @@ import { Details } from "../components/Details";
 import { Footer } from "../components/Footer";
 import { Info } from "../components/Info";
 import NavBar from "../components/NavBar";
-import { ProjectCard } from "../components/ProjectCard";
 import { ProjectCards } from "../components/ProjectCards";
 import { Skills } from "../components/Skills";
 
