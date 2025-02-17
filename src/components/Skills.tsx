@@ -34,7 +34,7 @@ const SecondArray = [
   {
     content: "Express",
     imgLink:
-      "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo-thumbnail.png",
   },
 ];
 const ThirdRow = [

@@ -8,7 +8,7 @@ export const About = () => {
     );
   }
   return (
-    <div id="about" className="h-[300px] max-sm:h-[400px]   w-full">
+    <div id="about" className="h-[300px] max-sm:h-full   w-full">
       <div className="relative h-full flex-row max-sm:flex-col  flex items-center gap-3   ">
         <div className="flex flex-col   h-full w-[50%]  items-start text-md  py-1   leading-loose  text-slate-500  justify-start  max-sm:font-normal max-sm:text-sm  max-sm:w-full  px-1   ">
           <h2 className="-b-[1px] pb-2  text-[#454343]  font-[500] w-full">
@@ -26,8 +26,12 @@ export const About = () => {
             Download CV
           </button>
         </div>{" "}
-        <div className="flex row    h-full w-[40%] items-center  text-white justify-center   max-sm:w-[100%] max-h-64 max-sm:h-full ">
-          <img src={myimg} alt="" className="h-full rounded-xl w-full" />
+        <div className="flex row    h-full w-[40%] items-center  text-white justify-center   max-sm:w-[100%] max-h-full max-sm:h-full">
+          <img
+            src={myimg}
+            alt=""
+            className="max-sm:h-96 h-full rounded-xl w-full"
+          />
         </div>
       </div>
     </div>
