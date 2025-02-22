@@ -14,7 +14,7 @@ export const ProjectCards = () => {
       liveLink: "https://devstype.vercel.app/signin",
       description:
         "Build a Multiplayer Monkeytype project,Test yourself in words mode, track your progress and improve your speed.",
-      projectUrl: "https://github.com/prajwal-dahat0810/Paytm.git",
+      projectUrl: "https://github.com/prajwal-dahat0810/devstype",
       techStack: [
         "React JS",
         "Node JS",
