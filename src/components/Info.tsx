@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router";
 import { FlipWords } from "./ui/flip-words";
 import { motion } from "framer-motion";
 
 export const Info = () => {
-  const navigate = useNavigate();
   const words = ["Prajwal Dahat", "Full Stack Developer"];
   return (
     <div

@@ -7,7 +7,6 @@ import { Info } from "../components/Info";
 import NavBar from "../components/NavBar";
 import { ProjectCards } from "../components/ProjectCards";
 import { Skills } from "../components/Skills";
-import { useRef } from "react";
 
 export type Parameter = {
   content: string;
