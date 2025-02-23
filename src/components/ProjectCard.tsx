@@ -23,8 +23,8 @@ export const ProjectCard = ({
   liveLink,
 }: ProjectParameter) => {
   return (
-    <Button className="w-full h-full">
-      <div className=" bg-white  w-full border rounded-xl  h-full  -bottom-[39%]  ">
+    <Button className="w-full h-full rounded-[22px]">
+      <div className=" bg-white  w-full border  rounded-[12px]  hover:shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset] h-full  -bottom-[39%]  ">
         <div
           key={id}
           className={`  rounded-md pb-2   h-[400px]  max-sm:opacity-100 transition-opacity relative duration-[600ms] ease-in-out motion-reduce:transition-none max-sm:h-[380px] `}
@@ -36,7 +36,7 @@ export const ProjectCard = ({
               imageRendering: "crisp-edges",
             }}
             src={imageUrl}
-            className="max-w-full  h-[50%]"
+            className="max-w-full rounded-t-[12px] h-[50%]"
             alt={`Carousel item `}
           />
           <div className="h-10  flex flex-row items-center justify-between    max-w-full px-1   relative  bottom-0  py-1  text-black ">

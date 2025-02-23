@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { FloatingDock } from "./FloatingNav";
 import {
   IconBrandGithub,
@@ -49,10 +50,7 @@ export default function NavBar() {
 
   return (
     <div className="h-10 top-0 w-full fixed z-50 flex items-center justify-around">
-      <FloatingDock
-        mobileClassName="mt-4 w-full" // only for demo, remove for production
-        items={links}
-      />
+      <FloatingDock mobileClassName="mt-4 w-full" items={links} />
     </div>
   );
 }

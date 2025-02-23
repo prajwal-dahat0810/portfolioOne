@@ -5,6 +5,7 @@ import monorepo from "../images/Projectimg/paytmMonorepo.png";
 import mediumLogo from "../images/Projectimg/mediumlogo.png";
 import amazonLogo from "../images/Projectimg/amazon-clone.png";
 import devstypeLogo from "../images/Projectimg/devstype-image.png";
+import { motion } from "framer-motion";
 export const ProjectCards = () => {
   const Projects: ProjectParameter[] = [
     {
@@ -95,15 +96,26 @@ export const ProjectCards = () => {
       <div className="grid grid-cols-2 gap-2  my-2 max-sm:grid-cols-1">
         {Projects.map((project) => {
           return (
-            <ProjectCard
-              id={project.id}
-              title={project.title}
-              imageUrl={project.imageUrl}
-              description={project.description}
-              projectUrl={project.projectUrl}
-              liveLink={project.liveLink}
-              techStack={project.techStack}
-            ></ProjectCard>
+            <motion.div
+              initial={{ opacity: 0, y: -20, filter: "blur(2px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{
+                duration: 0.8,
+                ease: "easeIn",
+                delay: Number(project.id) * 0.5,
+              }}
+            >
+              {" "}
+              <ProjectCard
+                id={project.id}
+                title={project.title}
+                imageUrl={project.imageUrl}
+                description={project.description}
+                projectUrl={project.projectUrl}
+                liveLink={project.liveLink}
+                techStack={project.techStack}
+              ></ProjectCard>
+            </motion.div>
           );
         })}
       </div>
