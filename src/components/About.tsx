@@ -3,7 +3,7 @@ import myimg from "../images/myimg1 (1).jpg";
 export const About = () => {
   function handleClick() {
     window.open(
-      "https://drive.google.com/file/d/1hEfgPvwuxUxh9q38FfzCcxksHAa8Homv/view",
+      "https://drive.google.com/file/d/1dNt_LbgltGA40Y9rbpDYd5kxD2rMgifi/view?usp=drive_link",
       "_blank",
       "noopener,noreferrer"
     );

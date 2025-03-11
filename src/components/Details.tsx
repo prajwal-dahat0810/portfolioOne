@@ -20,7 +20,7 @@ export const Details = () => {
               </div>
               <div className="text-[10px] text-slate-600  pl-2 font-[sepal] ">
                 {"Bachelor of Technology in Information Technology"}{" "}
-                <span>(CGPA: 7.28)</span>
+                <span>(CGPA: 7.11)</span>
               </div>
             </div>
             <div className="text-[11px] italic pl-2 font-sans font-400]">
